@@ -1,9 +1,15 @@
 export default class ASTNode {
-  constructor() {
+  constructor(type, text) {
     this.parent = null;
     this.children = [];
-    this.type = null;
-    this.text = '';
+    this.type = type;
+    this.text = text || '';
+  }
+  addChildren(node) {
+    if (node) {
+      this.children.push(node);
+      node.parent = this;
+    }
   }
   getParent() {
     return this.parent;

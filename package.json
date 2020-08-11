@@ -1,0 +1,23 @@
+{
+  "name": "toy-compiler",
+  "version": "1.0.0",
+  "description": "最近打算学习编译原理，计划先实现一个简易版编译器。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jjaimm/toy-compiler.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jjaimm/toy-compiler/issues"
+  },
+  "homepage": "https://github.com/jjaimm/toy-compiler#readme",
+  "dependencies": {
+    "antlr4": "^4.8.0"
+  }
+}
