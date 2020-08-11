@@ -1,4 +1,4 @@
-import SimpleParser from './SimpleParser.js'
+import SimpleParser from './simpleScript/SimpleParser.js'
 
 let parser = new SimpleParser()
 let script = 'var name = 1;';
