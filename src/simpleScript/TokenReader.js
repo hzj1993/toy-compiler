@@ -6,7 +6,7 @@ export default class TokenReader {
   }
 
   read() {
-    return this.pos < this.tokens.length ? this.tokens[++this.pos] : null;
+    return this.pos < this.tokens.length ? this.tokens[this.pos++] : null;
   }
 
   unread() {

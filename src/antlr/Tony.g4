@@ -1,10 +1,6 @@
-grammar TonyScript;
+grammar Tony;
 
 import CommonLexer;
-
-@header {
-package play;
-}
 
 classDeclaration
     : CLASS IDENTIFIER
@@ -129,10 +125,10 @@ typeArgument
 literal
     : integerLiteral
     | floatLiteral
-    | CHAR_LITERAL
-    | STRING_LITERAL
-    | BOOL_LITERAL
-    | NULL_LITERAL
+//    | CHAR_LITERAL
+//    | STRING_LITERAL
+//    | BOOL_LITERAL
+//    | NULL_LITERAL
     ;
 
 integerLiteral
