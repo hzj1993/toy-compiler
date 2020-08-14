@@ -48,7 +48,7 @@ SWITCH : 'switch';
 //SYNCHRONIZED : 'synchronized';
 THIS : 'this';
 //THROW : 'throw';
-//THROWS : 'throws';
+THROWS : 'throws';
 //TRANSIENT : 'transient';
 //TRY : 'try';
 VOID : 'void';
@@ -390,7 +390,7 @@ URSHIFT_ASSIGN : '>>>=';
 
 // §3.8 Identifiers (must appear after all keywords in the grammar)
 
-Identifier
+IDENTIFIER
 	:	Letter LetterOrDigit*
 	;
 

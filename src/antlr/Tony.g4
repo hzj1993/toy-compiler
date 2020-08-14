@@ -132,15 +132,11 @@ literal
     ;
 
 integerLiteral
-    : DECIMAL_LITERAL
-    | HEX_LITERAL
-    | OCT_LITERAL
-    | BINARY_LITERAL
+    : IntegerLiteral
     ;
 
 floatLiteral
-    : FLOAT_LITERAL
-    | HEX_FLOAT_LITERAL
+    : FloatingPointLiteral
     ;
 
 // STATEMENTS / BLOCKS
@@ -158,10 +154,10 @@ blockStatements
 
 blockStatement
     : variableDeclarators ';'
-    | statement
+//    | statement
    // | localTypeDeclaration
-    | functionDeclaration
-    | classDeclaration
+//    | functionDeclaration
+//    | classDeclaration
     ;
 
 statement
@@ -177,8 +173,8 @@ statement
     //| SYNCHRONIZED parExpression block
     | RETURN expression? ';'
     //| THROW expression ';'
-    | BREAK IDENTIFIER? ';'
-    | CONTINUE IDENTIFIER? ';'
+    | BREAK ';'
+    | CONTINUE ';'
     | SEMI
     | statementExpression=expression ';'
     | identifierLabel=IDENTIFIER ':' statement
